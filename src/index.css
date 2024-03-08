@@ -1,13 +1,135 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.container{
+  position:absolute;
+  width:50vw;
+  height:100vh;
+  margin-top:-50vh;
+  margin-left:-25vw;
+  top:50%;
+  left:50%;
+  background:lightskyblue;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.inputWord{
+  position: absolute;
+  top:10vh;
+  width:35vw;
+  text-align:center;
+  border:none;
+  border-radius: 5vw;
+  padding:1vh 0 1vh 0;
+  font-size:10vh;
 }
+.inputWord:focus{
+  border:2px solid blueviolet;
+  outline:none;
+}
+.start{
+  position: absolute;
+  transform: translate(-50%,-80%);
+  top:40vh;
+  border:none;
+  outline:none;
+  background:rgb(62, 97, 133);
+  color:white;
+  border-radius: 1vh;
+  padding:4vh 8vh 4vh 8vh;
+  transition:1s;
+  font-size:40px;
+}
+.start:hover{
+  padding:4vh 10vh 4vh 10vh;
+  transition:1s;
+  cursor: pointer;
+  letter-spacing: 2px;
+  color:rgb(189, 221, 255);
+}
+.randomWords{
+  border-radius:1vh;
+  border:1px solid transparent;
+  font-size:25px;
+  width:40vw;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.massage{
+  display:flex;
+  color:white;
+  background:rgb(25, 81, 193);
+  flex-direction:column;
+  justify-content: center;
+  align-items:center;
+  width:40vw;
+  height:auto;
+  padding-bottom:5px;
+  gap:10px;
+}
+.yesNo{
+  display:flex;
+  align-items:center;
+  justify-content: center;
+  width:20vw;
+  height:auto;
+  gap:10px;
+}
+.yesNo>button{
+  padding:10px 25px;
+  border-radius:5px;
+  border:none;
+  font-size:15px;
+  letter-spacing:1px;
+}
+.yesNo>button:hover{
+  cursor:pointer;
+  background:lightblue;
+}
+.TextContainer{
+  position: absolute;
+  transform: translate(-50%,0%);
+  top:30%;
+  left:50%;
+  z-index: 2;
+}
+.Lostmassage{
+  color:white;
+  background:rgb(25, 81, 193);
+  height:auto;
+  border-radius:3vh;
+  padding-left:2vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.lostRequest{
+  display: flex;
+  justify-content: center;
+  gap:10px;
+}
+.lostRequest>button{
+  border:none;
+  outline:none;
+  border-radius: 1vh;
+  width:20vh;
+  margin-bottom:5px;
+  padding:5px 10px;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.lostRequest>button:hover{
+  background:lightblue;
+  cursor: pointer;
+}
+.Massage{
+  color:white;
+  background:rgb(25, 81, 193);
+  height:auto;
+  border-radius:3vh;
+  padding:3vh 2vh;
+}
+
